@@ -143,6 +143,7 @@ GameManager.prototype.move = function (direction) {
           if (merged.value === 2048) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
+          tile.turns++;
         }
 
         if (!self.positionsEqual(cell, tile)) {

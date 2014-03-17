@@ -5,6 +5,7 @@ function Tile(position, value) {
 
   this.previousPosition = null;
   this.mergedFrom       = null; // Tracks tiles that merged together
+  this.turns            = 0;
 }
 
 Tile.prototype.savePosition = function () {
